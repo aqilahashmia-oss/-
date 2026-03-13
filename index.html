@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الوجية للسفر والسياحة</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <h1>شركة الوجية</h1>
+        <a href="#packages" class="btn">استكشف العروض</a>
+      </nav>
+      <section class="hero-content">
+        <p class="badge">منصة السفر والسياحة</p>
+        <h2>رحلات مخصصة داخل وخارج المملكة بكل سهولة</h2>
+        <p>
+          احجز رحلتك، اختر الفندق المناسب، وتواصل مع فريق الوجية لخدمة عملاء متاحة على مدار
+          الساعة.
+        </p>
+        <form id="booking-form" class="booking-card">
+          <label>
+            الوجهة
+            <input id="destination" type="text" placeholder="مثال: دبي" required />
+          </label>
+          <label>
+            تاريخ السفر
+            <input id="date" type="date" required />
+          </label>
+          <label>
+            عدد المسافرين
+            <input id="travelers" type="number" min="1" value="1" required />
+          </label>
+          <button type="submit" class="btn">احسب التكلفة التقريبية</button>
+        </form>
+        <p id="result" class="result"></p>
+      </section>
+    </header>
+
+    <main>
+      <section id="packages" class="section">
+        <h3>باقاتنا المميزة</h3>
+        <div class="cards">
+          <article class="card">
+            <h4>باقة اقتصادية</h4>
+            <p>رحلات مناسبة للعائلات مع خيارات إقامة عملية.</p>
+            <strong>تبدأ من 1200 ريال</strong>
+          </article>
+          <article class="card">
+            <h4>باقة الأعمال</h4>
+            <p>تنقلات سريعة وفنادق قريبة من مراكز الأعمال.</p>
+            <strong>تبدأ من 2200 ريال</strong>
+          </article>
+          <article class="card">
+            <h4>باقة فاخرة</h4>
+            <p>تجربة VIP شاملة النقل الخاص والجولات السياحية.</p>
+            <strong>تبدأ من 3800 ريال</strong>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 شركة الوجية للسفر والسياحة - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
